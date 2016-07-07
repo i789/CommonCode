@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My First Chrome Extension</title>
+    <style>
+      body {
+        font-family: "Consolas","Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        width: 300px;
+        height: 400px;
+      }
+      #status {
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 600px;
+      }
+    </style>
+
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div style="margin-top:20px">
+      <label style="">Please insert a image url:</label>
+      <input type="text" id="imgUrl" name="imgUrl" style="width:100%"/>
+    </div>
+
+    <div>
+      <button>Load Image!</button>
+      <img id="myImage" src="?" width="300" height="200" />
+    </div>
+  </body>
+</html>
